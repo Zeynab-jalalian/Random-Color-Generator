@@ -72,6 +72,14 @@ right: 10px;
     align-items: center;
     box-shadow: 0 0 10px rgba(0,0,0,0.25);
 }
+.colors span.active::before{
+    opacity: 1;
+    scale: 1.25;
+    right: 30px;
+    box-shadow: 0 0 10px var(--clr),
+    0 0 20px var(--clr),
+    0 0 50px var(--clr);
+}
 /* Responsive */
 @media(max-width:500px){
     body{
@@ -84,5 +92,13 @@ right: 10px;
     .colors span{
         width: 35px;
         margin: 10px;
+    }
+    .colors span.active::before{
+        opacity: 1;
+        scale: 1.25;
+        right: 25px;
+        box-shadow: 0 0 10px var(--clr),
+        0 0 20px var(--clr),
+        0 0 50px var(--clr);
     }
 }
